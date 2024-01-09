@@ -9,15 +9,15 @@ const userAge = parseInt(prompt("Quanti anni hai?"));
 console.log(userAge);
 
 // Il prezzo del biglietto è definito in base ai km (0.21 € al km)
-const fullPrice = userKm * 0.21;
+const fullPrice = (userKm * 0.21).toFixed(2);
 console.log(fullPrice);
 
 // Va applicato uno sconto del 20% per i minorenni
-const minPrice = fullPrice - (fullPrice * 20) / 100;
+const minPrice = (fullPrice - (fullPrice * 20) / 100).toFixed(2);
 console.log(minPrice);
 
 // Va applicato uno sconto del 40% per gli over 65
-const overPrice = fullPrice - (fullPrice * 40) / 100;
+const overPrice = (fullPrice - (fullPrice * 40) / 100).toFixed(2);
 console.log(overPrice);
 
 if (userAge < 18) {
