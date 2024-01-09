@@ -28,3 +28,8 @@ if (userAge > 65) {
   resultElement.innerText =
     "Il prezzo del tuo biglietto è" + overPrice + "euro";
 }
+
+if (userAge > 18 && userAge < 65) {
+  resultElement.innerText =
+    "Il prezzo del tuo biglietto è" + fullPrice + "euro";
+}
